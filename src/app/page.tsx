@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutFloatingInline from '@/components/navigation/NavbarLayoutFloatingInline';
@@ -9,6 +9,7 @@ import YearRoadmapTimeline from '@/components/sections/layouts/roadmap/YearRoadm
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterLogoEmphasis from '@/components/footer/FooterLogoEmphasis';
+import { Star, Users, Shield } from 'lucide-react';
 
 const navLinks = [
   { name: "Hero", id: "hero" },
@@ -17,7 +18,7 @@ const navLinks = [
   { name: "Roadmap", id: "roadmap" },
   { name: "How To Buy", id: "how-to-buy" },
   { name: "Tokenomics", id: "tokenomics" },
-  { name: "Footer", id: "footer" }
+  { name: "Footer", id: "footer" },
 ];
 
 export default function Home() {
@@ -71,11 +72,11 @@ export default function Home() {
       <div id="tokenomics" data-section="tokenomics">
         <BigNumberTokenomics
           title="PupCoin Tokenomics"
-          description="Understanding the distribution and use of PupCoin is vital for our investors." 
+          description="Understanding the distribution and use of PupCoin is vital for our investors."
           kpiItems={[
-            { value: "60%", description: "Allocated for Community Rewards", longDescription: "To incentivize participation in the ecosystem.", icon: "LucideStar" },
-            { value: "20%", description: "Marketing & Development", longDescription: "Ensuring steady growth and maintenance of the project.", icon: "LucideUsers" },
-            { value: "20%", description: "Reserve Fund", longDescription: "To manage liquidity across exchanges.", icon: "LucideShield" }
+            { value: "60%", description: "Allocated for Community Rewards", longDescription: "To incentivize participation in the ecosystem.", icon: Star },
+            { value: "20%", description: "Marketing & Development", longDescription: "Ensuring steady growth and maintenance of the project.", icon: Users },
+            { value: "20%", description: "Reserve Fund", longDescription: "To manage liquidity across exchanges.", icon: Shield }
           ]}
         />
       </div>
