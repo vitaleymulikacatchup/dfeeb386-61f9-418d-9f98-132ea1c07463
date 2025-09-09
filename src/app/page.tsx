@@ -25,7 +25,6 @@ export default function Home() {
     <SiteThemeProvider theme={{ styleVariant: "funAndTrendy", colorTemplate: 1, textAnimation: "slide" }}>
       <NavbarLayoutFloatingInline
         logoSrc="/images/logo.svg"
-        logoAlt="PupCoin Logo"
         navItems={navLinks}
         buttonText="Join the Pack"
         onButtonClick={() => { console.log('Button clicked!'); }}
@@ -83,7 +82,6 @@ export default function Home() {
       <div id="footer" data-section="footer">
         <FooterLogoEmphasis
           logoSrc="/images/logo.svg"
-          logoAlt="PupCoin Logo"
           logoText="PupCoin"
           columns={[
             { items: [{ label: "Privacy Policy", onClick: () => { console.log('Privacy clicked!'); } }, { label: "Terms of Service", onClick: () => { console.log('Terms clicked!'); } }] },
